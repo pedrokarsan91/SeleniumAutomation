@@ -30,7 +30,7 @@ namespace Selenium.Automation.PageObjects.Pages
 
         #region Elements
 
-        [FindsBy(How = How.CssSelector, Using = ".footer .footer-content:nth-of-type(1) .CTA-banner__callout")]
+        [FindsBy(How = How.ClassName, Using = "CTA--job")]
         private IWebElement ContactUsCTA { get; set; }
 
         [FindsBy(How = How.Id, Using = "FirstName")]
@@ -63,6 +63,8 @@ namespace Selenium.Automation.PageObjects.Pages
 
         public void FillInContactForm(ContactUsConfiguration contactUsConfiguration)
         {
+            ((IJavaScriptExecutor)SeleniumDriver.Instance).ExecuteScript("window.scrollTo(0, document.body.scrollHeight)");
+
             ContactUsCTA.Click();
             FirstName.SendKeys(contactUsConfiguration.FirstName);
             LastName.SendKeys(contactUsConfiguration.LastName);
@@ -71,6 +73,7 @@ namespace Selenium.Automation.PageObjects.Pages
             PhoneNumber.SendKeys(contactUsConfiguration.Phone);
             Email.SendKeys(contactUsConfiguration.Email);
 
+            new SelectElement(SeleniumDriver.Instance.FindElement(By.Id("Country"))).SelectByText(contactUsConfiguration.Country);
             new SelectElement(SeleniumDriver.Instance.FindElement(By.Id("Question"))).SelectByText(contactUsConfiguration.About);
 
             Content.SendKeys(contactUsConfiguration.Message);

@@ -13,5 +13,6 @@ C:\Dev\SeleniumAutomation\src\Selenium.Automation.Drivers\bin\Chrome\Selenium.Au
 C:\Dev\SeleniumAutomation\src\Selenium.Automation.Drivers\bin\Chrome\Selenium.Automation.Drivers.pdb
 C:\Dev\SeleniumAutomation\src\Selenium.Automation.Drivers\bin\Chrome\WebDriver.dll
 C:\Dev\SeleniumAutomation\src\Selenium.Automation.Drivers\bin\Chrome\WebDriver.xml
+C:\Dev\SeleniumAutomation\src\Selenium.Automation.Drivers\obj\Chrome\Selenium.Automation.Drivers.csprojResolveAssemblyReference.cache
 C:\Dev\SeleniumAutomation\src\Selenium.Automation.Drivers\obj\Chrome\Selenium.Automation.Drivers.dll
 C:\Dev\SeleniumAutomation\src\Selenium.Automation.Drivers\obj\Chrome\Selenium.Automation.Drivers.pdb

@@ -80,6 +80,7 @@ this.ScenarioSetup(scenarioInfo);
                         "Title",
                         "Phone",
                         "Email",
+                        "Country",
                         "About",
                         "Message"});
             table1.AddRow(new string[] {
@@ -89,7 +90,8 @@ this.ScenarioSetup(scenarioInfo);
                         "Mr",
                         "00000",
                         "hp@hogwarts.com",
-                        "New Business",
+                        "United Kingdom",
+                        "Careers",
                         "Hello World"});
 #line 8
  testRunner.When("I enter the following information", ((string)(null)), table1, "When ");
